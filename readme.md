@@ -12,7 +12,7 @@
 <br>
 代码：
 
-`
+```
 
         String host = "192.168.1.87";
         int mqtt_port = 1883;
@@ -27,14 +27,13 @@
         JmsMqttBuilder jmsMqttCreator = new JmsMqttBuilder(configure);
         jmsMqttCreator.start();
         
-`       
+```      
         
 * `android端mqtt消息订阅`
 android端订阅到的消息是经过适配器将jms主题中的消息消费掉然后发送到mqtt协议的主题上，android客户端消费的是这个MQTT主题中的数据，持久化也是在jms消息的发布订阅的持久化。
 <br>
 代码：
-
-`
+```
 
         //服务端发布消息主题名称
         String serverId = "server-1111";
@@ -52,6 +51,6 @@ android端订阅到的消息是经过适配器将jms主题中的消息消费掉�
         //启动
         mqBuilder.start();
         
-`
+```
 * `安卓demo`
-[参看](https://github.com/Cooze/JmsMQTT-android)
+[参看](https://github.com/Cooze/JmsMQTT-Android)
