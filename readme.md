@@ -4,7 +4,7 @@
 工程主要包含有服务端适配器和android端的sdk两个模块。
 
 ## 结构图
-![Alt text](pic/结构图.png)
+![Alt text](pic/activemq_struct.png)
 
 ## 例子
 * `服务端消息发布`
@@ -33,6 +33,7 @@
 android端订阅到的消息是经过适配器将jms主题中的消息消费掉然后发送到mqtt协议的主题上，android客户端消费的是这个MQTT主题中的数据，持久化也是在jms消息的发布订阅的持久化。
 <br>
 代码：
+
 ```
 
         //服务端发布消息主题名称
@@ -52,5 +53,6 @@ android端订阅到的消息是经过适配器将jms主题中的消息消费掉�
         mqBuilder.start();
         
 ```
+
 * `安卓demo`
 [参看](https://github.com/Cooze/JmsMQTT-Android)
